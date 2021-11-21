@@ -1,0 +1,63 @@
+.logo {
+    @apply text-3xl lg:text-xl font-bold font-logo;
+    @apply text-center;
+    @apply dark:text-white;
+}
+
+.header {
+    @apply pl-4 flex flex-col;
+    @apply lg:flex-row lg:justify-between lg:items-center;
+
+}
+
+.nav-option {
+    @apply px-8 py-1 rounded-2xl bg-white;
+    @apply text-black font-bold font-nav cursor-pointer;
+    @apply hover:text-gray-500;
+    @apply dark:text-white dark:hover:text-gray-200 dark:bg-gray-900;
+}
+
+.nav-option-selected {
+    @apply px-8 py-1 rounded-2xl bg-black;
+    @apply text-white font-bold font-nav cursor-pointer;
+    @apply transition duration-300 hover:bg-gray-700;
+    @apply dark:bg-white dark:text-gray-900;
+    @apply dark:hover:bg-gray-50 dark:hover:text-gray-700;
+}
+
+.title {
+    @apply pb-2 font-title font-bold text-2xl;
+    @apply dark:text-white;
+}
+
+.paragraph-base {
+    @apply font-paragraph font-light text-base;
+    @apply dark:text-white;
+}
+
+.paragraph-sm {
+    @apply font-paragraph font-light text-sm;
+    @apply dark:text-white;
+}
+
+.paragraph-xl {
+    @apply font-paragraph font-light text-xl;
+    @apply dark:text-white;
+}
+
+
+.tag {
+    @apply font-light font-paragraph text-sm cursor-pointer;
+    @apply bg-gray-50 px-2.5 py-0.5 rounded-md border border-gray-100;
+    @apply transition duration-500 hover:bg-gray-200;
+}
+
+.icon-social {
+    @apply bg-gray-900 rounded-full hover:bg-gray-700; 
+    @apply cursor-pointer transition duration-300;
+}
+
+input:checked ~ .dot {
+    transform: translateX(100%);
+    background-color: #5451AF;
+}
