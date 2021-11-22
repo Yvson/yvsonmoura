@@ -49,7 +49,7 @@
 .tag {
     @apply font-light font-paragraph text-sm cursor-pointer;
     @apply bg-gray-50 px-2.5 py-0.5 rounded-md border border-gray-100;
-    @apply transition duration-500 hover:bg-gray-200;
+    @apply transition duration-200 hover:bg-gray-200;
 }
 
 .icon-social {
@@ -60,4 +60,12 @@
 input:checked ~ .dot {
     transform: translateX(100%);
     background-color: #5451AF;
+}
+
+.case-box {
+    @apply max-w-xs rounded-2xl border-white border-8 shadow-lg;
+    @apply lg:w-auto lg:max-w-sm;
+    @apply hover:opacity-80;
+    @apply cursor-pointer;
+    @apply dark:border-gray-800;
 }

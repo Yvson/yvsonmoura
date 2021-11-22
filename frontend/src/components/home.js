@@ -21,13 +21,13 @@ export default class Home extends Component {
 
                 </div>
 
-                <div className="max-w-4xl space-y-12 flex-grow">
+                <div className="max-w-7xl space-y-12 flex-grow">
                     <div >
-                        <h1 className="title">perfil.</h1>
+                        <h1 className="title">profile.</h1>
                         <p className="paragraph-base text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus accumsan mi vel tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut auctor lectus elit, non luctus tortor ornare vitae. Nullam rutrum mi sit amet sapien placerat, non pretium sem sodales. Curabitur eget diam sodales, accumsan sem sit amet, feugiat odio. Suspendisse id odio in dolor fermentum egestas nec in nisi. Donec molestie blandit rutrum. Sed eleifend sit amet odio et maximus. Aliquam vestibulum orci quis lacinia volutpat. Ut ultricies fermentum eros ac scelerisque. Nam mollis, leo sed lacinia fringilla, ligula felis fringilla eros, et sollicitudin est enim nec urna. Nulla porttitor vel quam a pellentesque. Cras suscipit est quis ullamcorper ultricies. Proin non nunc blandit, tincidunt nulla et, blandit risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus accumsan mi vel tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut auctor lectus elit, non luctus tortor ornare vitae. Nullam rutrum mi sit amet sapien placerat, non pretium sem sodales. Curabitur eget diam sodales, accumsan sem sit amet, feugiat odio. Suspendisse id odio in dolor fermentum egestas nec in nisi. Donec molestie blandit rutrum. Sed eleifend sit amet odio et maximus. Aliquam vestibulum orci quis lacinia volutpat. Ut ultricies fermentum eros ac scelerisque. Nam mollis, leo sed lacinia fringilla, ligula felis fringilla eros, et sollicitudin est enim nec urna. Nulla porttitor vel quam a pellentesque. Cras suscipit est quis ullamcorper ultricies. Proin non nunc blandit, tincidunt nulla et, blandit risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus.</p>
                     </div>
                     <div>
-                        <h1 className="title">conhecimento.</h1>
+                        <h1 className="title">knowledge.</h1>
                         <div className="flex flex-row flex-wrap gap-1">
                             <h4 className="tag">HTML</h4>
                             <h4 className="tag">CSS</h4>
