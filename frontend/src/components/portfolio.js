@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Loading from './loading';
-import portfolio from '../img/svg/portfolio.svg';
+import portfolio from '../img/svg/portfolio_landing_page.svg';
 import easytasks from '../img/svg/easytasks.svg';
 import yvsonmoura from '../img/svg/yvsonmoura.svg';
 import yasminmoura from '../img/svg/yasminmoura.svg';
@@ -16,7 +16,7 @@ export default class Portfolio extends Component {
 
     render() {
         return (
-            <div id="portfolio-content" className="h-full flex flex-col flex-grow gap-8 justify-between lg:justify-start lg:justify-center">
+            <div id="portfolio-content" className="h-full flex flex-col flex-grow gap-8 justify-between lg:justify-start">
                 <div id="portfolio-frame" className="gap-y-2 flex flex-col justify-center items-center lg:flex-row lg:justify-evenly lg:items-center">
                     <div id="portfolio-description" className="gap-y-2 gap-x-8 flex flex-col justify-center items-center lg:flex-row lg:justify-evenly lg:items-center">
                         <div>

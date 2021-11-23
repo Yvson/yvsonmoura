@@ -30,6 +30,11 @@
     @apply dark:text-white;
 }
 
+.subtitle {
+    @apply font-title font-medium text-sm;
+    @apply dark:text-white;
+}
+
 .paragraph-base {
     @apply font-paragraph font-light text-base;
     @apply dark:text-white;
@@ -44,7 +49,6 @@
     @apply font-paragraph font-light text-xl;
     @apply dark:text-white;
 }
-
 
 .tag {
     @apply font-light font-paragraph text-sm cursor-pointer;
@@ -64,6 +68,14 @@ input:checked ~ .dot {
 
 .case-box {
     @apply max-w-xs rounded-2xl border-white border-8 shadow-lg;
+    @apply lg:w-auto lg:max-w-sm;
+    @apply hover:opacity-80;
+    @apply cursor-pointer;
+    @apply dark:border-gray-800;
+}
+
+.thumbnail-box {
+    @apply max-w-xs rounded-2xl border-white border-4 shadow-lg;
     @apply lg:w-auto lg:max-w-sm;
     @apply hover:opacity-80;
     @apply cursor-pointer;
