@@ -25,7 +25,7 @@ SECRET_KEY = ')r+xcrcc_9$imjfz!5%g&1@&4akr-e)%*l8d58nqr!cz3*tg(*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['yvsonmoura.com', 'www.yvsonmoura.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['yvsonmoura.com', 'www.yvsonmoura.com', 'localhost', '127.0.0.1', '0.0.0.0', '192.168.0.78']
 
 
 # Application definition

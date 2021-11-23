@@ -22,8 +22,8 @@ export default class Blog extends Component {
         let posts = [];
         for (let i=0; i <= 10; i++) {
             posts.push(
-            <div id="post-frame" className="flex flex-row gap-2 cursor-pointer">
-                <div className="">
+            <div id="post-frame" className="flex flex-col gap-2 cursor-pointer lg:flex-row">
+                <div className="flex flex-row justify-center">
                     <a href="">
                         <img className="thumbnail-box" src={post_thumbnail} alt="post_thumbnail" />
                     </a>
