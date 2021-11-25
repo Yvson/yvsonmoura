@@ -22,7 +22,7 @@ export default class Header extends Component {
                             <CustomLink to='/'>home</CustomLink>
                             <CustomLink to='/portfolio'>portfolio</CustomLink>
                             <CustomLink to='/blog'>blog</CustomLink>
-                            <CustomLink to='/contato'>contato</CustomLink>
+                            <CustomLink to='/contact'>contact</CustomLink>
                             <div className="pt-2 lg:pt-0">
                                 <Toggle theme={this.state.theme} isToggleOn={this.state.theme === 'dark' ? true : false} />
                             </div>

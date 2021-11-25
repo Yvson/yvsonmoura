@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import profile from '../img/avatar/profile.png';
 import github_icon from '../img/icons/github.svg';
-import whatsapp_icon from '../img/icons/whatsapp.svg';
 import linkedin_icon from '../img/icons/linkedin.svg';
 
 export default class Home extends Component {
@@ -14,9 +13,13 @@ export default class Home extends Component {
                     <h3 className="paragraph-xl">Fullstack Developer</h3>
                     <h4 className="paragraph-sm">Brasil</h4>
                     <div className="pt-4 flex flex-row gap-4">
-                        <img className="icon-social" src={github_icon} alt="Github Profile" />
-                        <img className="icon-social" src={linkedin_icon} alt="Linkedin Profile" />
-                        <img className="icon-social" src={whatsapp_icon} alt="Whatsapp Profile" />
+                        <a href="https://www.github.com/Yvson">
+                            <img className="icon-social" src={github_icon} alt="Github Profile" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/yvsonmoura/">
+                            <img className="icon-social" src={linkedin_icon} alt="Linkedin Profile" />
+                        </a>
+                        
                     </div>
 
                 </div>

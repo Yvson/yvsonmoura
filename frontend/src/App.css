@@ -81,3 +81,43 @@ input:checked ~ .dot {
     @apply cursor-pointer;
     @apply dark:border-gray-800;
 }
+
+.post-title {
+    @apply pb-2 font-title font-bold text-4xl;
+    @apply dark:text-white;
+}
+
+.post-subtitle {
+    @apply font-title font-medium text-xs;
+    @apply dark:text-white;
+}
+
+.post-date {
+    @apply font-title font-medium text-xs;
+    @apply dark:text-white;
+}
+
+.post-preview {
+    @apply font-title font-normal text-sm;
+    @apply dark:text-white;
+}
+
+.label-title {
+    @apply pb-2 font-title font-bold text-sm;
+    @apply dark:text-white;
+}
+
+.contact-input {
+    @apply w-auto;
+    @apply p-1;
+    @apply ring-black ring-1 rounded-sm;
+    @apply dark:ring-white;
+}
+
+.send-button {
+    @apply py-2 bg-black text-white font-bold text-lg;
+    @apply ring-black ring-2 rounded-sm;
+    @apply transition duration-200 hover:bg-gray-800;
+    @apply dark:hover:bg-gray-100;
+    @apply dark:ring-white dark:bg-white dark:text-black;
+}

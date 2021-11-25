@@ -5,10 +5,10 @@ import {
  } from 'react-router-dom';
 import './App.css';
 import Layout from './components/layout';
-import Header from './components/header.js';
 import Home from './components/home.js';
 import Portfolio from './components/portfolio';
 import Blog from './components/blog';
+import Post from './components/post';
 import Contact from './components/contact';
 import favicon from './img/icons/ym_black_bgwhite.ico';
 import manifest from './manifest.json';
@@ -33,8 +33,11 @@ export default class App extends Component {
         <Route path="/" element={<Layout theme={this.state.theme} />}>
           <Route index element={<Home />} />
           <Route path="portfolio" element={<Portfolio />} />
-          <Route path="blog" element={<Blog />} />
-          <Route path="contato" element={<Contact />} />
+          <Route path="blog">
+            <Route path="" element={<Blog />} />
+            <Route path=":slug" element={<Post />} />
+          </Route>
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
       </div>
