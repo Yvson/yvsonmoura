@@ -12,6 +12,7 @@ import Post from './components/post';
 import Contact from './components/contact';
 import favicon from './img/icons/ym_black_bgwhite.ico';
 import manifest from './manifest.json';
+import PageNotFound from './components/page_not_found';
 
 
 
@@ -38,6 +39,7 @@ export default class App extends Component {
             <Route path=":slug" element={<Post />} />
           </Route>
           <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<PageNotFound />} />          
         </Route>
       </Routes>
       </div>
