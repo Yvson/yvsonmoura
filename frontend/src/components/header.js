@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
-import Toggle from './toggle_button';
+import { Link } from 'react-router-dom';
 import CustomLink from './custom_link';
+import Toggle from './toggle_button';
+
+
 
 
 export default class Header extends Component {
@@ -14,9 +17,11 @@ export default class Header extends Component {
         return (
             <div>
                 <header className="header">
-                    <div className="">
-                        <h1 className="logo">yvsonmoura.</h1>
-                    </div>
+                    <Link to=''>
+                        <div className="">
+                            <h1 className="logo">yvsonmoura.</h1>
+                        </div>
+                    </Link>
                     <nav className="lg:pr-12">
                         <ul className="flex flex-col justify-center items-center pt-4 gap-2 lg:gap-12 lg:flex-row lg:justify-end lg:items-center lg:p-0">
                             <CustomLink to='/'>home</CustomLink>

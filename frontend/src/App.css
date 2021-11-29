@@ -16,6 +16,8 @@
     @apply text-3xl lg:text-xl font-bold font-logo;
     @apply text-center;
     @apply dark:text-white;
+    @apply transition duration-200 hover:text-gray-500;
+    @apply dark:hover:text-gray-300;
 }
 
 .header {

@@ -5,9 +5,11 @@ import './index.css';
 import App from './App';
 
 
+const data = window.data;
+
 ReactDOM.render(
   <BrowserRouter basename="/">
-    <App />
+    <App data={data}/>
   </BrowserRouter>,
   document.getElementById('root')
 );

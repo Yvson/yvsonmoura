@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import portfolio from '../img/svg/portfolio_landing_page.svg';
 import blog from '../img/svg/blog_code_typing.svg';
 import easytasks from '../img/svg/easytasks.svg';
@@ -8,36 +9,44 @@ import post_thumbnail from '../img/svg/post_thumbnail_mock.svg';
 
 
 
+
 export default class Blog extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            posts: this.props.posts,
         }
     }
 
-
     render() {
+        let location = window.location.pathname+'/';
 
         let posts = [];
-        for (let i=0; i <= 6; i++) {
+        for (let i=0; i < this.state.posts.length; i++) {
+            const slug = this.state.posts[i].fields.slug;
+            const thumbnail = window.location.origin + '/media/' + this.state.posts[i].fields.thumbnail;
+            const title = this.state.posts[i].fields.title;
+            const author = this.state.posts[i].fields.author[0]+' '+this.state.posts[i].fields.author[1];
+            const summary = this.state.posts[i].fields.summary;
+            const options_date = {'day':'numeric', 'month':'long', 'year': 'numeric'};
+            const date = new Date(this.state.posts[i].fields.publish).toLocaleString('en-US', options_date);
             
             posts.push(
-            <div key={i} id='post-frame' className="flex flex-col gap-2 cursor-pointer lg:flex-row">
-                <div className="flex flex-row justify-center">
-                    <a href="">
-                        <img className="thumbnail-box" src={post_thumbnail} alt="post_thumbnail" />
-                    </a>
-                </div>
-                <div className="flex flex-col justify-between p-2 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800">
-                    <div className="">
-                        <h1 className="title">Introdução ao Django</h1>
-                        <h4 className="subtitle">por Yvson Moura</h4>
+                <Link to={location+slug} key={slug}>
+                    <div key={i} id='post-frame' className="flex flex-col gap-2 cursor-pointer lg:flex-row">
+                        <div className="flex flex-row justify-center items-center">
+                            <img className="thumbnail-box" src={thumbnail} alt="post_thumbnail" />
+                        </div>
+                        <div className="flex flex-col justify-between p-2 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800">
+                            <div className="">
+                                <h1 className="title">{title}</h1>
+                                <h4 className="subtitle">por {author}</h4>
+                            </div>
+                            <p className="paragraph-base">{summary}</p>
+                            <h5 className="subtitle">{date}</h5>
+                        </div>
                     </div>
-                    <p className="paragraph-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus accumsan mi vel tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut auctor lectus elit, non luctus tortor ornare vitae.</p>
-                    <h5 className="subtitle">08 de Agosto</h5>
-                </div>
-            </div>
+                </Link>
             );
         }
         return (

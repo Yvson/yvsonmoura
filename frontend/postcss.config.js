@@ -5,7 +5,7 @@ module.exports = () => {
         require('postcss-fixes'),
         require('postcss-import'),
         require('tailwindcss'),
-        require('autoprefixer')
+        require('autoprefixer'),
       ]
     };
   };

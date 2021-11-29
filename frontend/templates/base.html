@@ -34,7 +34,17 @@
     <div id="root">
     </div>
 
+    <script>
+      {% autoescape off %}
+        window.data = {
+          posts: {{posts}}
+        }
+      {% endautoescape %}
+    </script>
+
     <script src="{% static 'js/main.js' %}"></script>
+
+
 
   </body>
 </html>

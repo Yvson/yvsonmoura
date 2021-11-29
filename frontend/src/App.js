@@ -17,11 +17,11 @@ import PageNotFound from './components/page_not_found';
 
 
 export default class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       theme: localStorage.theme || 'light',
-
+      posts: this.props.data.posts,
     }
 
   }
@@ -35,11 +35,11 @@ export default class App extends Component {
           <Route index element={<Home />} />
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="blog">
-            <Route path="" element={<Blog />} />
-            <Route path=":slug" element={<Post />} />
+            <Route path="" element={<Blog posts={this.state.posts}/>} />
+            <Route path=":slug" element={<Post posts={this.state.posts}/>} />
           </Route>
           <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<PageNotFound />} />          
+          <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
       </div>
