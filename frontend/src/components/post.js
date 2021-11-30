@@ -44,6 +44,7 @@ export default function Post(props) {
         const options_date = {'day':'numeric', 'month':'long', 'year': 'numeric', 'hour':'2-digit', 'minute':'2-digit'};
         const published_at = new Date(postData.fields.publish).toLocaleString('en-US', options_date);
         const updated_at = new Date(postData.fields.updated).toLocaleString('en-US', options_date);
+        const summary = postData.fields.summary;
         const body = postData.fields.body;
 
         return (
@@ -59,6 +60,9 @@ export default function Post(props) {
                     <div id="post-date">
                         <p className="post-date">Published at {published_at}</p>
                         <p className="post-date">Updated at {updated_at}</p>
+                    </div>
+                    <div id="post-summary" className="py-6 post-preview">
+                        {summary}
                     </div>
                     <div className="w-full">
                         <ReactMarkdown

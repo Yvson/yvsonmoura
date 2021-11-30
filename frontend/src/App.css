@@ -114,7 +114,7 @@ input:checked ~ .dot {
 }
 
 .post-preview {
-    @apply font-title font-normal text-sm;
+    @apply font-paragraph font-semibold text-sm;
     @apply dark:text-white;
 }
 
