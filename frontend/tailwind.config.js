@@ -29,7 +29,7 @@ module.exports = {
     },
 
     extend: {
-      typography: {
+      typography: (theme) => ({
         'xs': {
           css: {
             fontSize: '0.75rem',
@@ -43,10 +43,11 @@ module.exports = {
             'pre': {
               'white-space': 'pre-wrap',
               'word-wrap': 'break-word',
+              'font-family': theme('fontFamily.paragraph'),
             }
           }
         }
-      }
+      })
     },
 
     variants: {
