@@ -130,6 +130,11 @@ input:checked ~ .dot {
     @apply dark:ring-white;
 }
 
+.status-contact {
+    @apply font-title font-bold text-2xl;
+    @apply dark:text-white;
+}
+
 .send-button {
     @apply py-2 bg-black text-white font-bold text-lg;
     @apply ring-black ring-2 rounded-sm;
@@ -137,3 +142,4 @@ input:checked ~ .dot {
     @apply dark:hover:bg-gray-100;
     @apply dark:ring-white dark:bg-white dark:text-black;
 }
+

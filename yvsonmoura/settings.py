@@ -139,3 +139,12 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static/')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media/')
 
+# Email
+DEFAULT_FROM_EMAIL = 'contato@yvsonmoura.com'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST='smtp.titan.email'
+EMAIL_HOST_USER='contato@yvsonmoura.com'
+EMAIL_HOST_PASSWORD='Yvs*yvsonmoura123'
+EMAIL_PORT=465
+EMAIL_USE_SSL=True
+EMAIL_TIMEOUT=10

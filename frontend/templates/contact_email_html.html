@@ -1,0 +1,50 @@
+{% load static %}
+
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+  <body style="font-family: sans-serif; background: #f5f5f5;">
+    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+     <tr>
+       <td width="100%" align="center">
+         <table cellspacing="0" cellpadding="0" border="0" width="480">
+           <tr>
+              <td style="background-color: #FFFFFF; padding: 18px; text-align: center;">
+                <a href="{{ protocol }}://{{ domain }}{% url 'general_view' %}" style="text-decoration: none;">
+                    <img alt="yvsonmoura logo" src="{{ protocol }}://{{ domain }}{% static 'media/yvsonmoura_logo.svg' %}">
+                </a>
+              </td>
+           </tr>
+           <tr>
+             <td style="background-color: white; padding:18px 18px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 21px; color: #444444" width="480">
+                <h3 style="text-align: center;">
+                    Contact from 
+                    <a href="{{ protocol }}://{{ domain }}{% url 'general_view' %}">
+                        yvsonmoura.com
+                    </a>
+                </h3>
+                <br>
+                Hi Yvson,
+                <br>
+                <p><strong>You got a new message from {{name}} ({{contact}})</strong>.</p>
+                <br>
+                <p><strong>- Message:</strong></p><p>"<em>{{message}}</em>"</p>
+                <br>
+                <strong>The <a href="{{ protocol }}://{{ domain }}{% url 'general_view' %}">{{ site_name }}</a> team</strong>
+             </td>
+           </tr>
+           <tr>
+             <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; color: #999999; padding: 12px 18px">
+               <p>
+                  You received an email from <a href="{{ protocol }}://{{ domain }}{% url 'general_view' %}">yvsonmoura.com</a>
+               </p>
+             </td>
+           </tr>
+         </table>
+       </td>
+     </tr>
+   </table>
+  </body>
+</html>
