@@ -10,3 +10,4 @@
 *.pyc**/node_modules
 >>>>>>> e92d05b8e120caf0bf525c0797e80363ff56ed0b
 *.pyc
+*.sqlite3

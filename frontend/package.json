@@ -18,7 +18,6 @@
     "@babel/preset-react": "^7.16.0",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
-    "@tailwindcss/typography": "^0.4.1",
     "axios": "^0.24.0",
     "babel-loader": "^8.2.3",
     "highlight.js": "^11.3.1",
@@ -33,16 +32,17 @@
     "webpack-cli": "^4.9.1"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.0",
     "autoprefixer": "^10.4.0",
     "css-loader": "^6.5.1",
     "esbuild-loader": "^2.16.0",
     "file-loader": "^6.2.0",
     "json-loader": "^0.5.7",
     "mini-css-extract-plugin": "^2.4.5",
-    "postcss": "^8.3.11",
+    "postcss": "^8.4.4",
     "postcss-fixes": "^3.0.0",
     "postcss-import": "^14.0.2",
-    "postcss-loader": "^6.2.0",
-    "tailwindcss": "^2.2.19"
+    "postcss-loader": "^6.2.1",
+    "tailwindcss": "^3.0.1"
   }
 }

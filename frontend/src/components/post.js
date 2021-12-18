@@ -1,8 +1,9 @@
-import React, { useEffect, useState, Navi } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
+import django from 'highlight.js/lib/languages/django';
 import Loading from './loading';
 
 import 'highlight.js/styles/github-dark.css';
@@ -47,6 +48,10 @@ export default function Post(props) {
         const summary = postData.fields.summary;
         const body = postData.fields.body;
 
+        const myRehypeHighlight = () => rehypeHighlight({
+            languages:{'django': django},
+        })
+
         return (
             <div id="post-content" className="h-full flex flex-col flex-grow gap-8 justify-between">
                 <div id="post-frame" className="gap-y-2 flex flex-col justify-start items-start">
@@ -61,14 +66,14 @@ export default function Post(props) {
                         <p className="post-date">Published at {published_at}</p>
                         <p className="post-date">Updated at {updated_at}</p>
                     </div>
-                    <div id="post-summary" className="py-6 post-preview">
+                    <div id="post-summary" className="max-w-4xl py-6 post-preview-base text-justify self-center lg:!text-xl">
                         {summary}
                     </div>
-                    <div className="w-full">
+                    <div className="w-full lg:max-w-4xl lg:self-center">
                         <ReactMarkdown
                             remarkPlugins={[remarkGfm]}
-                            rehypePlugins={[rehypeHighlight]}
-                            className="max-w-none paragraph-base prose prose-xs lg:prose-lg xl:prose-xl"
+                            rehypePlugins={[myRehypeHighlight]}
+                            className="max-w-none prose post-paragraph-base text-justify lg:prose-xl lg:!text-xl"
                             children={body}
                         />
                     </div>

@@ -1,6 +1,7 @@
-const { width } = require('tailwindcss/defaultTheme')
+
 
 module.exports = {
+  mode: 'jit',
   purge: {
     enabled: false,
     content: [

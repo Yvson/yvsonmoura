@@ -42,7 +42,7 @@ export default class Blog extends Component {
                                 <h1 className="title">{title}</h1>
                                 <h4 className="subtitle">por {author}</h4>
                             </div>
-                            <p className="paragraph-base">{summary}</p>
+                            <p className="paragraph-base text-justify">{summary.substring(0, 400) + '...'}</p>
                             <h5 className="subtitle">{date}</h5>
                         </div>
                     </div>
@@ -52,10 +52,12 @@ export default class Blog extends Component {
         return (
             <div id="blog-content" className="h-full flex flex-col flex-grow gap-8 justify-between lg:justify-start">
                 <div id="blog-frame" className="gap-y-2 flex flex-col justify-center items-center lg:flex-row lg:justify-evenly lg:items-center">
-                    <div id="blog-description" className="gap-y-2 gap-x-8 flex flex-col justify-center items-center lg:flex-row lg:justify-evenly lg:items-center">
+                    <div id="blog-description" className="gap-y-2 gap-x-8 flex flex-col justify-center items-center lg:flex-row lg:justify-evenly lg:items-start">
                         <div>
                             <h1 className="title">blog.</h1>
-                            <p className="paragraph-base text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus accumsan mi vel tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut auctor lectus elit, non luctus tortor ornare vitae. Nullam rutrum mi sit amet sapien placerat, non pretium sem sodales. Curabitur eget diam sodales, accumsan sem sit amet, feugiat odio. Suspendisse id odio in dolor fermentum egestas nec in nisi. Donec molestie blandit rutrum. Sed eleifend sit amet odio et maximus. Aliquam vestibulum orci quis lacinia volutpat. Ut ultricies fermentum eros ac scelerisque. Nam mollis, leo sed lacinia fringilla, ligula felis fringilla eros, et sollicitudin est enim nec urna. Nulla porttitor vel quam a pellentesque. Cras suscipit est quis ullamcorper ultricies. Proin non nunc blandit, tincidunt nulla et, blandit risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus accumsan mi vel tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut auctor lectus elit, non luctus tortor ornare vitae. Nullam rutrum mi sit amet sapien placerat, non pretium sem sodales. Curabitur eget diam sodales, accumsan sem sit amet, feugiat odio. Suspendisse id odio in dolor fermentum egestas nec in nisi. Donec molestie blandit rutrum.</p>
+                            <p className="paragraph-base text-justify">
+                                Sharing technology-related content is a good way of learning more about the things you are interested in. This area is reserved to promote tutorials, tips, concepts, basic understanding of how frameworks, programming languages and tools work, basic setups, and good practices. Resources like this one can help people to understand how to solve problems and implement code in a proper way. Sorting things out alone can sometimes be a hard challenge, but as a community, the pieces of the puzzle can be put together more easily. So, you are more than welcome to enjoy the content presented in this session.
+                            </p>
                         </div>
                         <div>
                             <img className="max-w-xs lg:w-auto lg:max-w-md" src={blog} alt="blog" />

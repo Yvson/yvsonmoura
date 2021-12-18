@@ -113,9 +113,14 @@ input:checked ~ .dot {
     @apply dark:text-white;
 }
 
-.post-preview {
-    @apply font-paragraph font-semibold text-sm;
-    @apply dark:text-white;
+.post-preview-base {
+    @apply font-paragraph font-semibold text-base;
+    @apply text-black dark:text-white;
+}
+
+.post-paragraph-base {
+    @apply font-paragraph font-light text-base;
+    @apply text-black dark:text-white;
 }
 
 .label-title {
@@ -126,7 +131,7 @@ input:checked ~ .dot {
 .contact-input {
     @apply w-auto;
     @apply p-1;
-    @apply ring-black ring-1 rounded-sm;
+    @apply border-gray-900 border-2 ring-black ring-1 rounded-md;
     @apply dark:ring-white;
 }
 
@@ -143,3 +148,6 @@ input:checked ~ .dot {
     @apply dark:ring-white dark:bg-white dark:text-black;
 }
 
+.hljs {
+    @apply rounded-lg;
+}

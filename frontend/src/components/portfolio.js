@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Loading from './loading';
 import portfolio from '../img/svg/portfolio_landing_page.svg';
 import easytasks from '../img/svg/easytasks.svg';
 import yvsonmoura from '../img/svg/yvsonmoura.svg';
@@ -18,13 +17,15 @@ export default class Portfolio extends Component {
         return (
             <div id="portfolio-content" className="h-full flex flex-col flex-grow gap-8 justify-between lg:justify-start">
                 <div id="portfolio-frame" className="gap-y-2 flex flex-col justify-center items-center lg:flex-row lg:justify-evenly lg:items-center">
-                    <div id="portfolio-description" className="gap-y-2 gap-x-8 flex flex-col justify-center items-center lg:flex-row lg:justify-evenly lg:items-center">
-                        <div>
+                    <div id="portfolio-description" className="gap-y-2 gap-x-8 flex flex-col justify-center items-center lg:flex-row lg:justify-evenly lg:items-start">
+                        <div className="flex flex-col items-start justify-start">
                             <h1 className="title">portfolio.</h1>
-                            <p className="paragraph-base text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus accumsan mi vel tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut auctor lectus elit, non luctus tortor ornare vitae. Nullam rutrum mi sit amet sapien placerat, non pretium sem sodales. Curabitur eget diam sodales, accumsan sem sit amet, feugiat odio. Suspendisse id odio in dolor fermentum egestas nec in nisi. Donec molestie blandit rutrum. Sed eleifend sit amet odio et maximus. Aliquam vestibulum orci quis lacinia volutpat. Ut ultricies fermentum eros ac scelerisque. Nam mollis, leo sed lacinia fringilla, ligula felis fringilla eros, et sollicitudin est enim nec urna. Nulla porttitor vel quam a pellentesque. Cras suscipit est quis ullamcorper ultricies. Proin non nunc blandit, tincidunt nulla et, blandit risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus accumsan mi vel tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut auctor lectus elit, non luctus tortor ornare vitae. Nullam rutrum mi sit amet sapien placerat, non pretium sem sodales. Curabitur eget diam sodales, accumsan sem sit amet, feugiat odio. Suspendisse id odio in dolor fermentum egestas nec in nisi. Donec molestie blandit rutrum.</p>
+                            <p className="paragraph-base text-justify">
+                                The process of creating a new project starts from an idea that offers a solution to a problem that could be a simple personal website to promote a person or even an complete system of ecommerce. After understanding the basic needs to reach the minimum viable product (MVP), the design process is initiated using a prototype tool to create a first layout with the basic colors and styles. Second, the first implementation of design is put in practice via a JS framework and a CSS framework. Third, the basic settings, database models and views are set up in Django. Finally, the front-end and back-end are integrated and tested, leaving only the production settings and deployment to be done at last.
+                            </p>
                         </div>
                         <div>
-                            <img className="max-w-xs lg:w-auto lg:max-w-md" src={portfolio} alt="portfolio" />
+                            <img className="max-w-xs lg:w-auto lg:max-w-sm" src={portfolio} alt="portfolio" />
                         </div>
                     </div>
                 </div>
@@ -56,20 +57,12 @@ export default class Portfolio extends Component {
                         <h4 className="tag">PYTHON</h4>
                         <h4 className="tag">DJANGO</h4>
                         <h4 className="tag">DJANGO REST FRAMEWORK</h4>
+                        <h4 className="tag">SQLITE</h4>
                         <h4 className="tag">POSTGRESQL</h4>
-                        <h4 className="tag">DOCKER</h4>
                         <h4 className="tag">LINUX</h4>
                         <h4 className="tag">NGINX</h4>
-                        <h4 className="tag">CELERY</h4>
-                        <h4 className="tag">REDIS</h4>
-                        <h4 className="tag">RABBITMQ</h4>
                         <h4 className="tag">GIT</h4>
                         <h4 className="tag">GITHUB</h4>
-                        <h4 className="tag">GITHUB ACTIONS</h4>
-                        <h4 className="tag">CI/CD</h4>
-                        <h4 className="tag">SELENIUM</h4>
-                        <h4 className="tag">UNIT TESTING</h4>
-                        <h4 className="tag">FUNCTIONAL TESTING</h4>
                     </div>
                 </div>
             </div>
