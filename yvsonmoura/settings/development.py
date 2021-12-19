@@ -11,13 +11,14 @@ environ.Env.read_env(os.path.join(BASE_DIR, 'settings/.env.development'))
 SECRET_KEY = env("SECRET_KEY")
 DEBUG = env.bool("DEBUG", False)
 
+ALLOWED_HOSTS = ['localhost','127.0.0.1','0.0.0.0']
+
 DATABASES = {
     "default": env.db()
 }
 
-STATIC_URL = env("STATIC_URL")
-STATIC_ROOT = env("STATIC_ROOT")
-
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static/')
+MEDIA_ROOT=os.path.join(os.path.dirname(BASE_DIR), 'media/')
 
 CACHES = {
     'default': {

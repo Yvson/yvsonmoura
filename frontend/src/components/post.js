@@ -41,7 +41,7 @@ export default function Post(props) {
         
         const title = postData.fields.title;
         const author = postData.fields.author[0] + ' ' + postData.fields.author[1];
-        const cover = window.location.origin+'/media/'+postData.fields.cover;
+        const cover = postData.fields.cover;
         const options_date = {'day':'numeric', 'month':'long', 'year': 'numeric', 'hour':'2-digit', 'minute':'2-digit'};
         const published_at = new Date(postData.fields.publish).toLocaleString('en-US', options_date);
         const updated_at = new Date(postData.fields.updated).toLocaleString('en-US', options_date);

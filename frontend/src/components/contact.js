@@ -122,7 +122,7 @@ export default class Contact extends Component {
                         <div id="contact-email" className="">
                             <h1 className="title">email.</h1>
                             <div className="flex flex-row gap-2">
-                                <p className="paragraph-base">contato@yvsonmoura.com</p>
+                                <p className="paragraph-base">yvson@yvsonmoura.com</p>
                             </div>
                         </div>
                         <div id="contact-email-svg" className="">

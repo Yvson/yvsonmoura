@@ -93,3 +93,9 @@ USE_TZ = True
 
 # Custom User
 AUTH_USER_MODEL = 'frontend.User'
+
+
+# Static and Media
+STATIC_URL='/static/'
+MEDIA_URL='/media/'
+

@@ -5,7 +5,6 @@ import blog from '../img/svg/blog_code_typing.svg';
 import easytasks from '../img/svg/easytasks.svg';
 import yvsonmoura from '../img/svg/yvsonmoura.svg';
 import yasminmoura from '../img/svg/yasminmoura.svg';
-import post_thumbnail from '../img/svg/post_thumbnail_mock.svg';
 
 
 
@@ -24,7 +23,7 @@ export default class Blog extends Component {
         let posts = [];
         for (let i=0; i < this.state.posts.length; i++) {
             const slug = this.state.posts[i].fields.slug;
-            const thumbnail = window.location.origin + '/media/' + this.state.posts[i].fields.thumbnail;
+            const thumbnail = this.state.posts[i].fields.thumbnail;
             const title = this.state.posts[i].fields.title;
             const author = this.state.posts[i].fields.author[0]+' '+this.state.posts[i].fields.author[1];
             const summary = this.state.posts[i].fields.summary;
