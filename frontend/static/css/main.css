@@ -575,10 +575,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.1428571em;
   padding-bottom: 0.8571429em;
   padding-left: 1.1428571em;
+  background-color: inherit;
   white-space: pre-wrap;
   word-wrap: break-word;
   font-family: Open Sans;
-  background-color: inherit;
 }
 .prose :where(pre code):not(:where([class~="not-prose"] *)) {
   background-color: transparent;

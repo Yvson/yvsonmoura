@@ -34,13 +34,13 @@ export default class Portfolio extends Component {
                     <div>
                         <h1 className="title">cases.</h1>
                         <div className="gap-4 flex flex-col justify-center items-center lg:flex-row lg:justify-start lg:items-start">
-                            <a href="http://www.easytasks.com.br">
+                            <a href="https://www.easytasks.com.br">
                                 <img className="case-box" src={easytasks} alt="easytasks" />
                             </a>
-                            <a href="http://www.yvsonmoura.com">
+                            <a href="https://www.yvsonmoura.com">
                                 <img className="case-box" src={yvsonmoura} alt="yvsonmoura" />
                             </a>
-                            <a href="http://www.yasminmoura.com">
+                            <a href="https://www.yasminmoura.com">
                                 <img className="case-box" src={yasminmoura} alt="yasminmoura" />
                             </a>
                         </div>
