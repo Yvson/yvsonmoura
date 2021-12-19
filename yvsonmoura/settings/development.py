@@ -11,7 +11,7 @@ environ.Env.read_env(os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), '.
 SECRET_KEY = env("SECRET_KEY")
 DEBUG = env.bool("DEBUG", False)
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1','0.0.0.0']
+ALLOWED_HOSTS = ['localhost','127.0.0.1','0.0.0.0', 'yvsonmoura.com', 'www.yvsonmoura.com']
 
 DATABASES = {
     "default": env.db()
