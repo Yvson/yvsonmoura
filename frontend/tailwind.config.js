@@ -3,7 +3,7 @@
 module.exports = {
   mode: 'jit',
   purge: {
-    enabled: false,
+    enabled: true,
     content: [
       './src/**/*.html',
       './src/**/*.js',
@@ -42,6 +42,7 @@ module.exports = {
               color: 'inherit',
             },
             'pre': {
+              'background-color': 'inherit',
               'white-space': 'pre-wrap',
               'word-wrap': 'break-word',
               'font-family': theme('fontFamily.paragraph'),
