@@ -20,7 +20,6 @@ DATABASES = {
 STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'static/')
 MEDIA_ROOT=os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'media/')
 
-#Caching
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
