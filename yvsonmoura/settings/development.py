@@ -17,8 +17,8 @@ DATABASES = {
     "default": env.db()
 }
 
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static/')
-MEDIA_ROOT=os.path.join(os.path.dirname(BASE_DIR), 'media/')
+STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'static/')
+MEDIA_ROOT=os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'media/')
 
 CACHES = {
     'default': {
