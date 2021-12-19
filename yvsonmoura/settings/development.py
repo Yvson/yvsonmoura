@@ -6,7 +6,7 @@ import environ
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 env = environ.Env()
-environ.Env.read_env(os.path.join(BASE_DIR, 'settings/.env.development'))
+environ.Env.read_env(os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), '.env/.env.development'))
 
 SECRET_KEY = env("SECRET_KEY")
 DEBUG = env.bool("DEBUG", False)
