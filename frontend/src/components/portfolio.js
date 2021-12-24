@@ -34,15 +34,15 @@ export default class Portfolio extends Component {
                     <div>
                         <h1 className="title">cases.</h1>
                         <div className="gap-4 flex flex-col justify-center items-center lg:flex-row lg:justify-start lg:items-start">
-                            <a href="https://www.easytasks.com.br">
+                            {/*<a href="https://www.easytasks.com.br">
                                 <img className="case-box" src={easytasks} alt="easytasks" />
-                            </a>
+                            </a>*/}
                             <a href="https://www.yvsonmoura.com">
                                 <img className="case-box" src={yvsonmoura} alt="yvsonmoura" />
                             </a>
-                            <a href="https://www.yasminmoura.com">
+                            {/*<a href="https://www.yasminmoura.com">
                                 <img className="case-box" src={yasminmoura} alt="yasminmoura" />
-                            </a>
+                            </a>*/}
                         </div>
                     </div>
                 </div>
@@ -56,11 +56,11 @@ export default class Portfolio extends Component {
                         <h4 className="tag">TAILWINDCSS </h4>
                         <h4 className="tag">PYTHON</h4>
                         <h4 className="tag">DJANGO</h4>
-                        <h4 className="tag">DJANGO REST FRAMEWORK</h4>
+                        {/*<h4 className="tag">DJANGO REST FRAMEWORK</h4>*/}
                         <h4 className="tag">SQLITE</h4>
-                        <h4 className="tag">POSTGRESQL</h4>
+                        {/*<h4 className="tag">POSTGRESQL</h4>*/}
                         <h4 className="tag">LINUX</h4>
-                        <h4 className="tag">NGINX</h4>
+                        {/*<h4 className="tag">NGINX</h4>*/}
                         <h4 className="tag">GIT</h4>
                         <h4 className="tag">GITHUB</h4>
                     </div>
