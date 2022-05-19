@@ -51,11 +51,21 @@
         }
         return cookieValue;
       }
+
+      let curr_theme;
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        curr_theme = 'dark';
+        localStorage.theme = 'dark';
+      } else {
+        curr_theme = 'light';
+        localStorage.theme = 'light';
+      }
       
       {% autoescape off %}
         window.data = {
           'posts': {{posts}},
           'csrf_token': getCookie('csrftoken'),
+          'theme': curr_theme,
         }
       {% endautoescape %}
     

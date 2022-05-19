@@ -20,7 +20,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      theme: localStorage.theme || 'light',
+      theme: this.props.data.theme,
       posts: this.props.data.posts,
     }
 

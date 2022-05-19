@@ -12,6 +12,7 @@ export default class ToggleButton extends Component {
     }
 
     handleClick() {
+        localStorage.theme = this.state.isToggleOn === false ? 'dark' : 'light';
         this.setState(prevState => ({
             theme: prevState.isToggleOn === false ? 'dark' : 'light',
             isToggleOn: !prevState.isToggleOn,
