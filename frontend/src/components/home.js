@@ -35,7 +35,7 @@ export default class Home extends Component {
                         <h1 className="title">major achievements.</h1>
                         <ul className="paragraph-base text-justify7">
                             <li>Bachelor of Science in Petroleum Engineering (Federal University of Sergipe - Aracaju, Brazil), 2011-2017. </li>
-                            <li>Exchange Program in Petroleum Engineering (Missouri University of Science and Technology - Rolla, USA), 2014-2015. </li>
+                            <li>Scholarship Program in Petroleum Engineering (Missouri University of Science and Technology - Rolla, USA), 2014-2015. </li>
                         </ul>
                     </div>
                     <div>
