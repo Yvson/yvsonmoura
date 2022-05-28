@@ -28,7 +28,7 @@ export default class Home extends Component {
                     <div >
                         <h1 className="title">profile.</h1>
                         <p className="paragraph-base text-justify">
-                             I am 29, problem-solving driven, objective and straightforward. Self-taught in programming through books, articles, videos, courses, and documentation, I am focusing on the following stack: React + Django + PostgreSQL. From this stack, I have been building a simple portfolio to show my capabilities. Thus, I have been studying programming and other correlated topics since the beginning of 2021. Moreover, I tend to always be open-minded to new possibilities of doing the same things differently and learn new technologies. Currently, I am looking for a Entry-level Fullstack Developer position to get into the market in order to gain experience and build a career.
+                             I am 29, problem-solving driven, objective and straightforward. Self-taught in programming through books, articles, videos, courses, and documentation, I am focusing on the following stack: React + Django + PostgreSQL. From this stack, I have been building a simple portfolio to show my capabilities. Thus, I have been studying programming and other correlated topics since the beginning of 2021. Moreover, I tend to always be open-minded to new possibilities of doing the same things differently and learn new technologies. Currently, I am looking for an Entry-level Fullstack Developer position to get into the market in order to gain experience and build a career.
                         </p>
                     </div>
                     <div >

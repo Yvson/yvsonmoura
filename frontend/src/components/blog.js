@@ -55,7 +55,7 @@ export default class Blog extends Component {
                         <div>
                             <h1 className="title">blog.</h1>
                             <p className="paragraph-base text-justify">
-                                Sharing technology-related content is a good way of learning more about the things you are interested in. This area is reserved to promote tutorials, tips, concepts, basic understanding of how frameworks, programming languages and tools work, basic setups, and good practices. Resources like this one can help people to understand how to solve problems and implement code in a proper way. Sorting things out alone can sometimes be a hard challenge, but as a community, the pieces of the puzzle can be put together more easily. So, you are more than welcome to enjoy the content presented in this session.
+                                Sharing technology-related content is a good way of learning more about the things you are interested in. This area is reserved to promote tutorials, tips, concepts, basic understanding of how frameworks, programming languages and tools work, basic setups, and good practices. Resources like this one can help people to understand how to solve problems and implement code in a proper way. Sorting things out alone can sometimes be a hard challenge, but as a community, the pieces of the puzzle can be put together more easily. So, you are more than welcome to enjoy the content presented in this section.
                             </p>
                         </div>
                         <div>
