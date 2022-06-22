@@ -1,8 +1,7 @@
-||
-| :--: |
-| ![yvsonmoura_logo](https://yvsonmoura.com/static/media/yvsonmoura_logo.svg)|
-| *This is my personal website - [yvsonmoura]. Feel free to inspect the code and suggest any modification.* |
+![yvsonmoura_logo](https://github.com/Yvson/yvsonmoura/blob/master/github_header.png)
 
+
+This is my personal website - [yvsonmoura]. Feel free to inspect the code and suggest any modification.
   
 
 ## Sections
