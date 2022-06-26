@@ -31,7 +31,7 @@ This is my personal website - [yvsonmoura]. Feel free to inspect the code and su
 	- React DOM
 	- React Router DOM
 
--  **SQLite**
+-  **PostgreSQL**
 	- Data Storage
 
 
@@ -39,13 +39,13 @@ This is my personal website - [yvsonmoura]. Feel free to inspect the code and su
 
 - React.js
 - Django
-- SQLite
+- PostgreSQL
 
 
 ## Hosting
 
 - Git + Github
-- Hostgator
+- Railway.app
 
 
 
