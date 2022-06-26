@@ -1,19 +1,14 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-
 from django.db import models
 from django.utils import timezone
-from django.utils.http import urlquote
 from django.conf import settings
 from django.utils.text import slugify
-from django.core.validators import FileExtensionValidator
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 
 
 
 class UserManager(BaseUserManager):
     def get_absolute_url(self):
-        return "/u/%s/" % urlquote(self.username)
+        return "/u/%s/" % format(self.username)
 
     def get_username(self):
         'Returns the username'

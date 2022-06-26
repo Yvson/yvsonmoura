@@ -1,24 +1,27 @@
-from base import *
-import environ
-import os
-
+from .base import *
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 env = environ.Env()
-environ.Env.read_env(os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), '.env/.env.production'))
+environ.Env.read_env(os.path.join(BASE_DIR, 'settings/.env.production'))
 
 SECRET_KEY = env("SECRET_KEY")
 DEBUG = env.bool("DEBUG", False)
 
-ALLOWED_HOSTS = ['www.yvsonmoura.com', 'yvsonmoura.com']
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
 
 DATABASES = {
     "default": env.db()
 }
 
-STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'static/')
-MEDIA_ROOT=os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'media/')
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), env("STATIC_ROOT"))
+STATIC_URL = env("STATIC_URL")
+
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), env("MEDIA_ROOT"))
+
+SECURE_SSL_REDIRECT = True
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
 
 CACHES = {
     'default': {

@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-
 from django.views.generic.base import TemplateView
 from django.core.serializers import serialize
 from django.http import JsonResponse
