@@ -66,6 +66,7 @@ export default class Home extends Component {
                             <h4 className="tag">KUBERNETES</h4>
                             <h4 className="tag">ANSIBLE</h4>
                             <h4 className="tag">TERRAFORM</h4>
+                            <h4 className="tag">VAGRANT</h4>
                             <h4 className="tag">LINUX</h4>
                             <h4 className="tag">NGINX</h4>
                             <h4 className="tag">CELERY</h4>
