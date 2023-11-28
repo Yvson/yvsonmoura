@@ -102,4 +102,4 @@ AUTH_USER_MODEL = 'frontend.User'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # WHITENOISE
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+#STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
