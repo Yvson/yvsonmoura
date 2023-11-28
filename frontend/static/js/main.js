@@ -8376,11 +8376,11 @@ class Home extends react.Component {
       className: "title"
     }, "profile."), /*#__PURE__*/react.createElement("p", {
       className: "paragraph-base text-justify"
-    }, "I am 30, problem-solving driven, objective and straightforward. Self-taught in programming through books, articles, videos, courses, and documentation, I am focusing on the following stack: React + Django + PostgreSQL. From this stack, I have been building a simple portfolio to show my capabilities. Thus, I have been studying programming and other correlated topics since the beginning of 2021. Moreover, I tend to always be open-minded to new possibilities of doing the same things differently and learn new technologies. Currently, I am looking for an Entry-level Fullstack Developer position to get into the market in order to gain experience and build a career.")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("h1", {
+    }, "I am 31, problem-solving driven, objective and straightforward. Self-taught in programming through books, articles, videos, courses, and documentation, I have been working with different stacks but always focused on web development. Thus, I have been studying programming and other correlated topics since the beginning of 2021. Moreover, I tend to always be open-minded to new possibilities of doing the same things differently and learn new technologies. Currently, I am working as a Software Developer.")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("h1", {
       className: "title"
     }, "employment history."), /*#__PURE__*/react.createElement("ul", {
       className: "paragraph-base text-justify7"
-    }, /*#__PURE__*/react.createElement("li", null, "Junior Software Developer at FIDD GROUP (TypeScript \xB7 SQL \xB7 C# \xB7 .NET Framework \xB7 Web Development \xB7 React.js \xB7 Docker), Sep/2022 - Today. "))), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("h1", {
+    }, /*#__PURE__*/react.createElement("li", null, "Junior Software Developer at Banco do Brasil (TypeScript \xB7 React.js \xB7 Python \xB7 Flask \xB7 Docker \xB7 Kubernetes \xB7 Terraform \xB7 Ansible \xB7 Vagrant \xB7 Cloud Computing \xB7 MySQL), Oct/2023 - Today. "), /*#__PURE__*/react.createElement("li", null, "Junior Software Developer at FIDD GROUP (TypeScript \xB7 SQL \xB7 C# \xB7 .NET Framework \xB7 Web Development \xB7 React.js \xB7 Docker), Sep/2022 - Oct/2023. "))), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("h1", {
       className: "title"
     }, "major achievements."), /*#__PURE__*/react.createElement("ul", {
       className: "paragraph-base text-justify7"
@@ -8393,8 +8393,6 @@ class Home extends react.Component {
     }, "HTML"), /*#__PURE__*/react.createElement("h4", {
       className: "tag"
     }, "CSS"), /*#__PURE__*/react.createElement("h4", {
-      className: "tag"
-    }, "JAVASCRIPT"), /*#__PURE__*/react.createElement("h4", {
       className: "tag"
     }, "TYPESCRIPT"), /*#__PURE__*/react.createElement("h4", {
       className: "tag"
@@ -8412,11 +8410,21 @@ class Home extends react.Component {
       className: "tag"
     }, "DJANGO REST FRAMEWORK"), /*#__PURE__*/react.createElement("h4", {
       className: "tag"
+    }, "FLASK"), /*#__PURE__*/react.createElement("h4", {
+      className: "tag"
     }, "SQLITE"), /*#__PURE__*/react.createElement("h4", {
       className: "tag"
     }, "POSTGRESQL"), /*#__PURE__*/react.createElement("h4", {
       className: "tag"
+    }, "MYSQL"), /*#__PURE__*/react.createElement("h4", {
+      className: "tag"
     }, "DOCKER"), /*#__PURE__*/react.createElement("h4", {
+      className: "tag"
+    }, "KUBERNETES"), /*#__PURE__*/react.createElement("h4", {
+      className: "tag"
+    }, "ANSIBLE"), /*#__PURE__*/react.createElement("h4", {
+      className: "tag"
+    }, "TERRAFORM"), /*#__PURE__*/react.createElement("h4", {
       className: "tag"
     }, "LINUX"), /*#__PURE__*/react.createElement("h4", {
       className: "tag"

@@ -28,13 +28,14 @@ export default class Home extends Component {
                     <div>
                         <h1 className="title">profile.</h1>
                         <p className="paragraph-base text-justify">
-                             I am 30, problem-solving driven, objective and straightforward. Self-taught in programming through books, articles, videos, courses, and documentation, I am focusing on the following stack: React + Django + PostgreSQL. From this stack, I have been building a simple portfolio to show my capabilities. Thus, I have been studying programming and other correlated topics since the beginning of 2021. Moreover, I tend to always be open-minded to new possibilities of doing the same things differently and learn new technologies. Currently, I am looking for an Entry-level Fullstack Developer position to get into the market in order to gain experience and build a career.
+                             I am 31, problem-solving driven, objective and straightforward. Self-taught in programming through books, articles, videos, courses, and documentation, I have been working with different stacks but always focused on web development. Thus, I have been studying programming and other correlated topics since the beginning of 2021. Moreover, I tend to always be open-minded to new possibilities of doing the same things differently and learn new technologies. Currently, I am working as a Software Developer.
                         </p>
                     </div>
                     <div>
                         <h1 className="title">employment history.</h1>
                         <ul className="paragraph-base text-justify7">
-                            <li>Junior Software Developer at FIDD GROUP (TypeScript · SQL · C# · .NET Framework · Web Development · React.js · Docker), Sep/2022 - Today. </li>
+                            <li>Junior Software Developer at Banco do Brasil (TypeScript · React.js · Python · Flask · Docker · Kubernetes · Terraform · Ansible · Vagrant · Cloud Computing · MySQL), Oct/2023 - Today. </li>
+                            <li>Junior Software Developer at FIDD GROUP (TypeScript · SQL · C# · .NET Framework · Web Development · React.js · Docker), Sep/2022 - Oct/2023. </li>
                         </ul>
                     </div>
                     <div>
@@ -49,7 +50,6 @@ export default class Home extends Component {
                         <div className="flex flex-row flex-wrap gap-1">
                             <h4 className="tag">HTML</h4>
                             <h4 className="tag">CSS</h4>
-                            <h4 className="tag">JAVASCRIPT</h4>
                             <h4 className="tag">TYPESCRIPT</h4>
                             <h4 className="tag">REACT</h4>
                             <h4 className="tag">TAILWINDCSS </h4>
@@ -58,9 +58,14 @@ export default class Home extends Component {
                             <h4 className="tag">PYTHON</h4>
                             <h4 className="tag">DJANGO</h4>
                             <h4 className="tag">DJANGO REST FRAMEWORK</h4>
+                            <h4 className="tag">FLASK</h4>
                             <h4 className="tag">SQLITE</h4>
                             <h4 className="tag">POSTGRESQL</h4>
+                            <h4 className="tag">MYSQL</h4>
                             <h4 className="tag">DOCKER</h4>
+                            <h4 className="tag">KUBERNETES</h4>
+                            <h4 className="tag">ANSIBLE</h4>
+                            <h4 className="tag">TERRAFORM</h4>
                             <h4 className="tag">LINUX</h4>
                             <h4 className="tag">NGINX</h4>
                             <h4 className="tag">CELERY</h4>
